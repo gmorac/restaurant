@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Personaliza tu pedido</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="bg-gray">
+
+	<header class="header bg-brand">
+		<div class="container py-2">
+			<div class="row">
+				<div class="col-sm-12 col-md-2 text-center">
+					<h1 class="page-brand text-white menu-brand text-shadow pt-1">
+						<i class="fab fa-jedi-order"></i>
+					</h1>
+				</div>
+				<div class="col-sm-12 col-md-8 text-center">
+					<h4 class="text-white text-shadow m-0">JAVIER</h4>
+					<h5 class="text-white text-shadow m-0">Personaliza tu almuerzo</h5>
+				</div>
+				<div class="col-sm-12 col-md-2 text-center text-md-right">
+				</div>
+			</div>
+			<div class="row d-flex justify-content-around">
+				<a href="menu.html" class="btn btn-outline-warning"><i class="fas fa-arrow-left mr-2"></i> Volver</a>
+				<a href="" class="btn btn-outline-warning"><i class="fas fa-sync-alt mr-2"></i> Reiniciar</a>
+			</div>
+		</div>		
+	</header>
+
+	<div class="container menu-container">
+		<div class="row">
+			<div class="col-sm-12">
+				<section class="menu-app scale-in-hor-center">					
+					<article class="menu-item-app my-4 ">
+						<div class="row">
+							<div class="col-sm-12 col-md-4">
+								<figure class="menu-image text-center p-2">
+									<img src="image/menu/full-lunch.jpg" alt="" class="img-fluid rounded-circle  menu-img">
+								</figure>								
+							</div>
+							<div class="col-sm-12 col-md-8 p-3">
+								<div class="row">
+									<div class="col-sm-12 mb-2">
+										<h4 class="text-center text-md-left">Almuerzo desafiante</h4>									
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-sm-6">
+										<ul class="list-unstyled personalizate-list-items">
+											<li>Arroz blanco, lentejas</li>
+											<li>Carne de res o pollo</li>
+											<li>Tocineta</li>
+											<li>Papas en cubos</li>
+											<li>Hogao</li>
+											<li>Jugo natural</li>
+										</ul>										
+									</div>
+									<div class="col-sm-6 text-center">
+										<a href="bill.html" class="btn btn-primary buy-btn "><i class="fas fa-utensils pr-2"></i>Pedir <br>$10.000</a>
+									</div>
+								</div>
+							</div>	
+						</div>
+					</article>
+				</section>
+			</div>
+		</div>
+
+		<div class="row">
+			<div class="col-sm-12">
+				<form action="">
+					<h4 class="my-3 text-center text-md-left">¿Quieres quitar algo de tu plato?</h4>					
+					<!-- delete items -->
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Sin hogao</label>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Sin tocineta</label>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Sin jugo natural</label>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Sin lenteja</label>
+							</div>
+						</div>
+					</div>
+					<hr class="buy-line text-center my-5">
+
+					<!-- add items -->
+					<h4 class="my-3 text-center text-md-left">Adiciones</h4>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Tocineta</label>
+								<span class="buy-add-item">$1.500</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Pollo desmechado</label>
+								<span class="buy-add-item">$2.500</span>
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Guacamole</label>
+								<span class="buy-add-item">$1.000</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Chorizo</label>
+								<span class="buy-add-item">$2.500</span>
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Chicharrón</label>
+								<span class="buy-add-item">$1.500</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Maíz tierno</label>
+								<span class="buy-add-item">$2.500</span>
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Carne agria</label>
+								<span class="buy-add-item">$1.000</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Carne molida</label>
+								<span class="buy-add-item">$2.500</span>
+							</div>
+						</div>						
+					</div>
+					<hr class="buy-line text-center my-5">
+
+					<!-- add sauce -->
+					<h4 class="my-3 text-center text-md-left">¿Y si adicionamos una salsa?</h4>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Salsa de la casa</label>
+								<span class="buy-add-item">$1.500</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Salsa española</label>
+								<span class="buy-add-item">$2.500</span>
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Tártara</label>
+								<span class="buy-add-item">$1.000</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Salsa presto</label>
+								<span class="buy-add-item">$2.500</span>
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Mojo</label>
+								<span class="buy-add-item">$1.500</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Vinagreta</label>
+								<span class="buy-add-item">$2.500</span>
+							</div>
+						</div>						
+					</div>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Salsa de queso</label>
+								<span class="buy-add-item">$1.000</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Salsa boloñesa</label>
+								<span class="buy-add-item">$2.500</span>
+							</div>
+						</div>						
+					</div>
+					<hr class="buy-line text-center my-5">
+
+					<!-- drinks -->
+					<h4 class="my-3 text-center text-md-left">No olvides tu bebida </h4><h6 class="text-center text-md-left font-weight-light">Pregunta por los sabores tu jugo</h6>
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Jugos naturales</label>
+								<span class="buy-add-item">$3.000</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Productos Postobón</label>
+								<span class="buy-add-item">$3.500</span>
+							</div>
+						</div>						
+					</div>
+					<hr class="buy-line text-center my-5">
+					
+					<div class="row">
+						<div class="col-sm-12 col-md-6 text-center">
+							<a href="add.html" title="Agregar y seguir comprando" class="btn btn-outline-danger btn-lg landingPage-btn btn-app green-landing-button mb-3 btn-block payment-btn"><i class="fas fa-utensils mr-2"></i></i>Agregar y seguir comprando </a>
+						</div>
+						<div class="col-sm-12 col-md-6 text-center">
+							<a href="bill.html" title="Pagar" class="btn btn-primary btn-lg landingPage-btn btn-app landing-button mb-3 btn-block payment-btn"><i class="fas fa-shopping-basket mr-2"></i> Ver pedido (1)  $10.000</a>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>

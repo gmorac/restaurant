@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Resumen de tu compra</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<link rel="stylesheet" href="css/all.css">
+	<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body class="bg-gray">
+
+	<header class="header bg-brand">
+		<div class="container py-2">
+			<div class="row">
+				<div class="col-sm-12 col-md-2 text-center">
+					<h1 class="page-brand text-white menu-brand text-shadow pt-1">
+						<i class="fab fa-jedi-order"></i>
+					</h1>
+				</div>
+				<div class="col-sm-12 col-md-8 text-center">
+					<h4 class="text-white text-shadow m-0">JAVIER</h4>
+					<h5 class="text-white text-shadow m-0">Un resumen de tu compra</h5>
+				</div>
+				<div class="col-sm-12 col-md-2 text-center text-md-right">
+				</div>
+			</div>
+			<div class="row d-flex justify-content-around">
+				<a href="personalizate.html" class="btn btn-outline-warning"><i class="fas fa-arrow-left mr-2"></i> Volver</a>
+				<a href="" class="btn btn-outline-warning"><i class="fas fa-sync-alt mr-2"></i> Reiniciar</a>
+			</div>
+		</div>		
+	</header>
+
+
+	<div class="container menu-container">
+		<!-- bill -->
+		<div class="row">
+			<div class="table-responsive">
+				<table class="table table-hover text-center bill-table">
+					<thead>
+						<tr>
+							<th scope="col">Producto</th>
+							<th scope="col">Valor</th>
+							<th scope="col">Ajustar tu orden </th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>
+								<img src="image/menu/full-lunch.jpg" alt="" class="img-fluid rounded-circle  bill-img border border-dark">
+								<p>Almuerzo desafiante</p>
+							</td>
+							<td>
+								<h4>$10.000</h4>
+							</td>
+							<td>
+								<a href="" title="Eliminar producto / plato"><i class="fas fa-edit bill-options"></i></a>
+								<a href="" title="Eliminar producto / plato"><i class="fas fa-trash-alt bill-options"></i></a>
+							</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-sm-12 text-center">
+				<a href="add.html" class="btn btn-primary btn-lg btn-app green-landing-button"><i class="fas fa-utensils mr-2"></i>Agregar otro plato</a>
+			</div>
+		</div>
+		<hr class="buy-line text-center my-5">
+		<div class="row">
+			<div class="col-sm-12">
+				<form action="">
+					<h4 class="my-3 text-center text-md-left">¿Y si terminamos con un delicioso postre?</h4>					
+					<!-- add dessert -->
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Tarta de manzana</label>
+								<span class="buy-add-item">$1.500</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Trufas de chocolate</label>
+								<span class="buy-add-item">$2.500</span>
+							</div>
+						</div>						
+					</div>
+
+					<div class="row">
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Tiramisú</label>
+								<span class="buy-add-item">$1.000</span>
+							</div>
+						</div>
+						<div class="col-sm-12 col-md-6 my-2">
+							<div class="form-check">
+								<input type="checkbox" class="form-check-input buy-checkbox" id="exampleCheck1">
+								<label class="form-check-label d-block buy-label ml-3" for="exampleCheck1">Brownie</label>
+								<span class="buy-add-item">$2.500</span>
+							</div>
+						</div>						
+					</div>
+					<hr class="buy-line text-center my-5">
+
+					<div class="text-center">
+						<a href="payment.html" title="Empecemos!" class="btn btn-primary btn-lg landingPage-btn btn-app landing-button mb-5 btn-block bill-btn"><i class="fas fa-credit-card mr-2"></i></i> Pagar $ 10.000 </a>
+					</div>
+
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.js"></script>
+</body>
+</html>
