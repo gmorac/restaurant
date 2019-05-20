@@ -1,0 +1,948 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+	<title>YASAI stores - ventas</title>
+	<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+
+	<!-- Fonts and icons -->
+	<script src="assets/js/plugin/webfont/webfont.min.js"></script>
+	<script>
+		WebFont.load({
+			google: {"families":["Montserrat:100,200,300,400,500,600,700,800,900"]},
+			custom: {"families":["Flaticon", "LineAwesome"], urls: ['assets/css/fonts.css']},
+			active: function() {
+				sessionStorage.fonts = true;
+			}
+		});
+	</script>
+
+	<!-- CSS Files -->
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/ready.min.css">
+
+	<!-- CSS Just for demo purpose, don't include it in your project -->
+	<link rel="stylesheet" href="assets/css/demo.css">
+</head>
+<body>
+	<div class="wrapper">
+		<div class="main-header">
+			<!-- Logo Header -->
+			<div class="logo-header">
+				<a href="index.html" class="big-logo">
+					<!-- <img src="assets/img/logoresponsive.png" class="logo-img"> -->
+					Y | 
+				</a>
+				<a href="index.html" class="logo">
+					<!-- <img src="assets/img/logoheader.png" class="navbar-brand"> -->
+					YASAI
+				</a>
+				<button class="navbar-toggler sidenav-toggler ml-auto" type="button" data-toggle="collapse" data-target="collapse" aria-controls="sidebar" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon">
+						<i class="la la-bars"></i>
+					</span>
+				</button>
+				<button class="topbar-toggler more"><i class="la la-ellipsis-v"></i></button>
+			</div>
+			<!-- End Logo Header -->
+
+			<!-- Navbar Header -->
+			<nav class="navbar navbar-header navbar-expand-lg" data-background-color="blue">
+				<div class="container-fluid">
+					<div class="navbar-minimize">
+						<button class="btn btn-minimize btn-rounded">
+							<i class="la la-navicon"></i>
+						</button>
+					</div>
+					<ul class="navbar-nav topbar-nav ml-md-auto align-items-center">
+						<li class="nav-item toggle-nav-search hidden-caret">
+							<a class="nav-link" data-toggle="collapse" href="#search-nav" role="button" aria-expanded="false" aria-controls="search-nav">
+								<i class="flaticon-search-1"></i>
+							</a>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="flaticon-envelope-1"></i>
+							</a>
+							<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+								<a class="dropdown-item" href="#">Asistencia</a>
+								<a class="dropdown-item" href="#">Notificaciones</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#">Enviar comentarios</a>
+							</div>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								<i class="flaticon-alarm"></i>
+								<span class="notification">10</span>
+							</a>
+							<ul class="dropdown-menu notif-box animated fadeIn" aria-labelledby="navbarDropdown">
+								<li>
+									<div class="dropdown-title">Tienes 10 nuevos pedidos</div>
+								</li>
+								<li>
+									<div class="notif-center">
+										<a href="#">
+											<div class="notif-icon notif-primary"> <i class="la la-user-plus"></i> </div>
+											<div class="notif-content">
+												<span class="block">
+													8 Tiendas solicitan insumos
+												</span>
+												<span class="time">Hace 15 minutos</span>
+											</div>
+										</a>
+										<a href="#">
+											<div class="notif-icon notif-success"> <i class="la la-comment"></i> </div>
+											<div class="notif-content">
+												<span class="block">
+													2 Posibles alianzas estratégicas
+												</span>
+												<span class="time">Hace 12 minutos</span>
+											</div>
+										</a>
+										<a href="#">
+											<div class="notif-img">
+												<img src="assets/img/profile2.jpg" alt="Img Profile">
+											</div>
+											<div class="notif-content">
+												<span class="block">
+													El Corral Gourmet te escribió
+												</span>
+												<span class="time">Hace 1 día</span>
+											</div>
+										</a>
+									</div>
+								</li>
+								<li>
+									<a class="see-all" href="javascript:void(0);">Ver todas las notificaciones<i class="la la-angle-right"></i> </a>
+								</li>
+							</ul>
+						</li>
+						<li class="nav-item dropdown hidden-caret">
+							<a class="dropdown-toggle profile-pic" data-toggle="dropdown" href="#" aria-expanded="false"> <img src="assets/img/profile.jpg" alt="user-img" width="36" class="img-circle"></a>
+							<ul class="dropdown-menu dropdown-user animated fadeIn">
+								<li>
+									<div class="user-box">
+										<div class="u-img"><img src="assets/img/profile.jpg" alt="user"></div>
+										<div class="u-text">
+											<h4>Hizrian</h4>
+											<p class="text-muted">global@yasai.com</p><a href="#" class="btn btn-rounded btn-danger btn-sm">Ver perfil</a>
+										</div>
+									</div>
+								</li>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#"><i class="ti-user"></i> Mi perfil</a>
+								<a class="dropdown-item" href="#"></i> Balance</a>
+								<a class="dropdown-item" href="#"><i class="ti-email"></i> Mensajes</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#"><i class="ti-settings"></i> Ajustes</a>
+								<div class="dropdown-divider"></div>
+								<a class="dropdown-item" href="#"><i class="fa fa-power-off"></i> Cerrar sesión</a>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<!-- End Navbar -->
+		</div>
+
+		<!-- Sidebar -->
+		<div class="sidebar">
+			<div class="sidebar-background"></div>
+			<div class="sidebar-wrapper scrollbar-inner">
+				<div class="sidebar-content">
+					<ul class="nav">
+						<li class="nav-item active">
+							<a href="index.html">
+								<i class="flaticon-home"></i>
+								<p>Inicio</p>
+								<span class="badge badge-count">5</span>
+							</a>
+						</li>
+						<li class="nav-section">
+							<span class="sidebar-mini-icon">
+								<i class="la la-ellipsis-h"></i>
+							</span>
+							<h4 class="text-section">Balance</h4>
+						</li>
+						
+						<li class="nav-item">
+							<a data-toggle="collapse" href="#submenu" class="collapsed" aria-expanded="false">
+								<i class="flaticon-graph"></i>
+								<p>Reportes</p>
+								<span class="caret"></span>
+							</a>
+							<div class="collapse" id="submenu" style="">
+								<ul class="nav nav-collapse">
+									<li><a href="sales.html">
+										<span class="sub-item">Ventas</span></a>
+									</li>
+									<li><a href="cashin.html">
+										<span class="sub-item">Conversiones</span></a>
+									</li>
+								</ul>
+							</div>
+						</li>
+						<li class="nav-item">
+							<a href="#">
+								<i class="flaticon-layers"></i>
+								<p>Nuevos clientes </p>
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+		<!-- End Sidebar -->
+
+		<div class="main-panel">
+			<div class="content">
+				<div class="container-fluid">
+					<div class="page-header">
+						<h4 class="page-title">Audiencia</h4>
+					</div>
+					<div class="page-category">Balance y reportes de los nuevos clientes y proveedores.</div>
+
+					<div class="row">
+						<div class="col-md-6 d-none">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Ventas desde la App</div>
+								</div>
+								<div class="card-body">
+									<div class="chart-container">
+										<div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+											<div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+												</div>
+											</div>
+											<div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:200%;height:200%;left:0; top:0">
+												</div>
+											</div>
+										</div>
+										<canvas id="lineChart" width="429" height="300" class="chartjs-render-monitor" style="display: block; width: 429px; height: 300px;">
+										</canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-none">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Ventas en restaurantes y locales</div>
+								</div>
+								<div class="card-body">
+									<div class="chart-container">
+										<div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+											<div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+												</div>
+											</div>
+											<div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:200%;height:200%;left:0; top:0">
+												</div>
+											</div>
+										</div>
+										<canvas id="barChart" width="429" height="300" class="chartjs-render-monitor" style="display: block; width: 429px; height: 300px;">
+										</canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Porcentaje de usuarios</div>
+								</div>
+								<div class="card-body">
+									<div class="chart-container">
+										<div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+											<div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+												</div>
+											</div>
+											<div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:200%;height:200%;left:0; top:0">
+												</div>
+											</div>
+										</div>
+										<canvas id="pieChart" style="width: 429px; height: 300px; display: block;" width="429" height="300" class="chartjs-render-monitor">
+										</canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Preferencias del usuario frecuente</div>
+								</div>
+								<div class="card-body">
+									<div class="chart-container">
+										<div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+											<div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+												</div>
+											</div>
+											<div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:200%;height:200%;left:0; top:0">
+												</div>
+											</div>
+										</div>
+										<canvas id="doughnutChart" style="width: 429px; height: 300px; display: block;" width="429" height="300" class="chartjs-render-monitor">
+										</canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-none">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Radar Chart</div>
+								</div>
+								<div class="card-body">
+									<div class="chart-container">
+										<div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+											<div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+												</div>
+											</div>
+											<div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:200%;height:200%;left:0; top:0">
+												</div>
+											</div>
+										</div>
+										<canvas id="radarChart" width="429" height="300" class="chartjs-render-monitor" style="display: block; width: 429px; height: 300px;">
+										</canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-none">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Bubble Chart</div>
+								</div>
+								<div class="card-body">
+									<div class="chart-container">
+										<div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+											<div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+												</div>
+											</div>
+											<div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:200%;height:200%;left:0; top:0">
+												</div>
+											</div>
+										</div>
+										<canvas id="bubbleChart" width="429" height="300" class="chartjs-render-monitor" style="display: block; width: 429px; height: 300px;">
+										</canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-none">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Multiple Line Chart</div>
+								</div>
+								<div class="card-body">
+									<div class="chart-container">
+										<div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+											<div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+												</div>
+											</div>
+											<div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:200%;height:200%;left:0; top:0">
+												</div>
+											</div>
+										</div>
+										<canvas id="multipleLineChart" width="429" height="300" class="chartjs-render-monitor" style="display: block; width: 429px; height: 300px;">
+										</canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-6 d-none">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Multiple Bar Chart</div>
+								</div>
+								<div class="card-body">
+									<div class="chart-container">
+										<div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+											<div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+												</div>
+											</div>
+											<div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:200%;height:200%;left:0; top:0">
+												</div>
+											</div>
+										</div>
+										<canvas id="multipleBarChart" width="429" height="300" class="chartjs-render-monitor" style="display: block; width: 429px; height: 300px;">
+										</canvas>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-12">
+							<div class="card">
+								<div class="card-header">
+									<div class="card-title">Tipos de usuario</div>
+								</div>
+								<div class="card-body">
+									<div class="card-sub">
+										Caracterización de la población que consume los productos y servicios del restaurante.
+									</div>
+									<div class="chart-container">
+										<div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;">
+											<div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0">
+												</div>
+											</div>
+											<div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;">
+												<div style="position:absolute;width:200%;height:200%;left:0; top:0">
+												</div>
+											</div>
+										</div>
+										<canvas id="htmlLegendsChart" width="917" height="300" class="chartjs-render-monitor" style="display: block; width: 917px; height: 300px;">
+										</canvas>
+									</div>
+									<div id="myChartLegend">
+										<ul class="8-legend html-legend">
+											<li>
+												<span style="background-color:#f3545d">
+												</span>Universitarios</li>
+												<li>
+													<span style="background-color:#fdaf4b">
+													</span>Trabajo de oficina</li>
+													<li>
+														<span style="background-color:#177dff">
+														</span>Visitantes </li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+
+
+						<footer class="footer">
+							<div class="container-fluid">
+								<nav class="pull-left">
+									<ul class="nav">
+										<li class="nav-item">
+											<a class="nav-link" href="#">
+												Soporte
+											</a>
+										</li>
+									</ul>
+								</nav>
+								<div class="copyright ml-auto">
+									2019, Diseñado por <a href="#">Stefanini </a>
+								</div>
+							</div>
+						</footer>
+					</div>
+
+				</div>
+			</div>
+		</div>
+		<!--   Core JS Files   -->
+		<script src="assets/js/core/jquery.3.2.1.min.js"></script>
+		<script src="assets/js/core/popper.min.js"></script>
+		<script src="assets/js/core/bootstrap.min.js"></script>
+		<!-- jQuery UI -->
+		<script src="assets/js/plugin/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+		<script src="assets/js/plugin/jquery-ui-touch-punch/jquery.ui.touch-punch.min.js"></script>
+		<!-- Chart JS -->
+		<script src="assets/js/plugin/chart.js/chart.min.js"></script>
+		<!-- Bootstrap Toggle -->
+		<script src="assets/js/plugin/bootstrap-toggle/bootstrap-toggle.min.js"></script>
+		<!-- jQuery Scrollbar -->
+		<script src="assets/js/plugin/jquery-scrollbar/jquery.scrollbar.min.js"></script>
+		<!-- Ready Pro JS -->
+		<script src="assets/js/ready.min.js"></script>
+		<!-- Ready Pro DEMO methods, don't include it in your project! -->
+		<script src="assets/js/setting-demo.js"></script>
+		<script>
+			var lineChart = document.getElementById('lineChart').getContext('2d'),
+			barChart = document.getElementById('barChart').getContext('2d'),
+			pieChart = document.getElementById('pieChart').getContext('2d'),
+			doughnutChart = document.getElementById('doughnutChart').getContext('2d'),
+			radarChart = document.getElementById('radarChart').getContext('2d'),
+			bubbleChart = document.getElementById('bubbleChart').getContext('2d'),
+			multipleLineChart = document.getElementById('multipleLineChart').getContext('2d'),
+			multipleBarChart = document.getElementById('multipleBarChart').getContext('2d'),
+			htmlLegendsChart = document.getElementById('htmlLegendsChart').getContext('2d');
+
+			var myLineChart = new Chart(lineChart, {
+				type: 'line',
+				data: {
+					labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+					datasets: [{
+						label: "Facebook & Instagram",
+						borderColor: "#1d7af3",
+						pointBorderColor: "#FFF",
+						pointBackgroundColor: "#1d7af3",
+						pointBorderWidth: 2,
+						pointHoverRadius: 4,
+						pointHoverBorderWidth: 1,
+						pointRadius: 4,
+						backgroundColor: 'transparent',
+						fill: true,
+						borderWidth: 2,
+						data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900]
+					}]
+				},
+				options : {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend: {
+						position: 'bottom',
+						labels : {
+							padding: 10,
+							fontColor: '#1d7af3',
+						}
+					},
+					tooltips: {
+						bodySpacing: 4,
+						mode:"nearest",
+						intersect: 0,
+						position:"nearest",
+						xPadding:10,
+						yPadding:10,
+						caretPadding:10
+					},
+					layout:{
+						padding:{left:15,right:15,top:15,bottom:15}
+					}
+				}
+			});
+
+			var myBarChart = new Chart(barChart, {
+				type: 'bar',
+				data: {
+					labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+					datasets : [{
+						label: "Ventas",
+						backgroundColor: 'rgb(23, 125, 255)',
+						borderColor: 'rgb(23, 125, 255)',
+						data: [3, 2, 9, 5, 4, 6, 4, 6, 7, 8, 7, 4],
+					}],
+				},
+				options: {
+					responsive: true, 
+					maintainAspectRatio: false,
+					scales: {
+						yAxes: [{
+							ticks: {
+								beginAtZero:true
+							}
+						}]
+					},
+				}
+			});
+
+			var myPieChart = new Chart(pieChart, {
+				type: 'pie',
+				data: {
+					datasets: [{
+						data: [50, 35, 15],
+						backgroundColor :["#1d7af3","#f3545d","#fdaf4b"],
+						borderWidth: 0
+					}],
+					labels: ['Nuevos usuarios', 'Visitantes', 'Usuarios frecuentes'] 
+				},
+				options : {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend: {
+						position : 'bottom',
+						labels : {
+							fontColor: 'rgb(154, 154, 154)',
+							fontSize: 11,
+							usePointStyle : true,
+							padding: 20
+						}
+					},
+					pieceLabel: {
+						render: 'percentage',
+						fontColor: 'white',
+						fontSize: 14,
+					},
+					tooltips: false,
+					layout: {
+						padding: {
+							left: 20,
+							right: 20,
+							top: 20,
+							bottom: 20
+						}
+					}
+				}
+			})
+
+			var myDoughnutChart = new Chart(doughnutChart, {
+				type: 'doughnut',
+				data: {
+					datasets: [{
+						data: [10, 20, 30],
+						backgroundColor: ['#f3545d','#fdaf4b','#1d7af3']
+					}],
+
+					labels: [
+					'Desayuno ligero',
+					'Postres',
+					'Acompañamientos'
+					]
+				},
+				options: {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend : {
+						position: 'bottom'
+					},
+					layout: {
+						padding: {
+							left: 20,
+							right: 20,
+							top: 20,
+							bottom: 20
+						}
+					}
+				}
+			});
+
+			var myRadarChart = new Chart(radarChart, {
+				type: 'radar',
+				data: {
+					labels: ['Running', 'Swimming', 'Eating', 'Cycling', 'Jumping'],
+					datasets: [{
+						data: [20, 10, 30, 2, 30],
+						borderColor: '#1d7af3',
+						backgroundColor : 'rgba(29, 122, 243, 0.25)',
+						pointBackgroundColor: "#1d7af3",
+						pointHoverRadius: 4,
+						pointRadius: 3,
+						label: 'Team 1'
+					}, {
+						data: [10, 20, 15, 30, 22],
+						borderColor: '#716aca',
+						backgroundColor: 'rgba(113, 106, 202, 0.25)',
+						pointBackgroundColor: "#716aca",
+						pointHoverRadius: 4,
+						pointRadius: 3,
+						label: 'Team 2'
+					},
+					]
+				},
+				options : {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend : {
+						position: 'bottom'
+					}
+				}
+			});
+
+			var myBubbleChart = new Chart(bubbleChart,{
+				type: 'bubble',
+				data: {
+					datasets:[{
+						label: "Car", 
+						data:[{x:25,y:17,r:25},{x:30,y:25,r:28}, {x:35,y:30,r:8}], 
+						backgroundColor:"#716aca"
+					},
+					{
+						label: "Motorcycles", 
+						data:[{x:10,y:17,r:20},{x:30,y:10,r:7}, {x:35,y:20,r:10}], 
+						backgroundColor:"#1d7af3"
+					}],
+				},
+				options: {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend: {
+						position: 'bottom'
+					},
+					scales: {
+						yAxes: [{
+							ticks: {
+								beginAtZero:true
+							}
+						}],
+						xAxes: [{
+							ticks: {
+								beginAtZero:true
+							}
+						}]
+					},
+				}
+			});
+
+			var myMultipleLineChart = new Chart(multipleLineChart, {
+				type: 'line',
+				data: {
+					labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+					datasets: [{
+						label: "Python",
+						borderColor: "#1d7af3",
+						pointBorderColor: "#FFF",
+						pointBackgroundColor: "#1d7af3",
+						pointBorderWidth: 2,
+						pointHoverRadius: 4,
+						pointHoverBorderWidth: 1,
+						pointRadius: 4,
+						backgroundColor: 'transparent',
+						fill: true,
+						borderWidth: 2,
+						data: [30, 45, 45, 68, 69, 90, 100, 158, 177, 200, 245, 256]
+					},{
+						label: "PHP",
+						borderColor: "#59d05d",
+						pointBorderColor: "#FFF",
+						pointBackgroundColor: "#59d05d",
+						pointBorderWidth: 2,
+						pointHoverRadius: 4,
+						pointHoverBorderWidth: 1,
+						pointRadius: 4,
+						backgroundColor: 'transparent',
+						fill: true,
+						borderWidth: 2,
+						data: [10, 20, 55, 75, 80, 48, 59, 55, 23, 107, 60, 87]
+					}, {
+						label: "Ruby",
+						borderColor: "#f3545d",
+						pointBorderColor: "#FFF",
+						pointBackgroundColor: "#f3545d",
+						pointBorderWidth: 2,
+						pointHoverRadius: 4,
+						pointHoverBorderWidth: 1,
+						pointRadius: 4,
+						backgroundColor: 'transparent',
+						fill: true,
+						borderWidth: 2,
+						data: [10, 30, 58, 79, 90, 105, 117, 160, 185, 210, 185, 194]
+					}]
+				},
+				options : {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend: {
+						position: 'top',
+					},
+					tooltips: {
+						bodySpacing: 4,
+						mode:"nearest",
+						intersect: 0,
+						position:"nearest",
+						xPadding:10,
+						yPadding:10,
+						caretPadding:10
+					},
+					layout:{
+						padding:{left:15,right:15,top:15,bottom:15}
+					}
+				}
+			});
+
+			var myMultipleBarChart = new Chart(multipleBarChart, {
+				type: 'bar',
+				data: {
+					labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+					datasets : [{
+						label: "First time visitors",
+						backgroundColor: '#59d05d',
+						borderColor: '#59d05d',
+						data: [95, 100, 112, 101, 144, 159, 178, 156, 188, 190, 210, 245],
+					},{
+						label: "Visitors",
+						backgroundColor: '#fdaf4b',
+						borderColor: '#fdaf4b',
+						data: [145, 256, 244, 233, 210, 279, 287, 253, 287, 299, 312,356],
+					}, {
+						label: "Pageview",
+						backgroundColor: '#177dff',
+						borderColor: '#177dff',
+						data: [185, 279, 273, 287, 234, 312, 322, 286, 301, 320, 346, 399],
+					}],
+				},
+				options: {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend: {
+						position : 'bottom'
+					},
+					title: {
+						display: true,
+						text: 'Traffic Stats'
+					},
+					tooltips: {
+						mode: 'index',
+						intersect: false
+					},
+					responsive: true,
+					scales: {
+						xAxes: [{
+							stacked: true,
+						}],
+						yAxes: [{
+							stacked: true
+						}]
+					}
+				}
+			});
+
+			// Chart with HTML Legends
+
+			var gradientStroke = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientStroke.addColorStop(0, '#177dff');
+			gradientStroke.addColorStop(1, '#80b6f4');
+
+			var gradientFill = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientFill.addColorStop(0, "rgba(23, 125, 255, 0.7)");
+			gradientFill.addColorStop(1, "rgba(128, 182, 244, 0.3)");
+
+			var gradientStroke2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientStroke2.addColorStop(0, '#f3545d');
+			gradientStroke2.addColorStop(1, '#ff8990');
+
+			var gradientFill2 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientFill2.addColorStop(0, "rgba(243, 84, 93, 0.7)");
+			gradientFill2.addColorStop(1, "rgba(255, 137, 144, 0.3)");
+
+			var gradientStroke3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientStroke3.addColorStop(0, '#fdaf4b');
+			gradientStroke3.addColorStop(1, '#ffc478');
+
+			var gradientFill3 = htmlLegendsChart.createLinearGradient(500, 0, 100, 0);
+			gradientFill3.addColorStop(0, "rgba(253, 175, 75, 0.7)");
+			gradientFill3.addColorStop(1, "rgba(255, 196, 120, 0.3)");
+
+			var myHtmlLegendsChart = new Chart(htmlLegendsChart, {
+				type: 'line',
+				data: {
+					labels: ["Ene", "Feb", "Mar", "Abr", "May", "Jun", "Jul", "Ago", "Sep", "Oct", "Nov", "Dic"],
+					datasets: [ {
+						label: "Universitarios",
+						borderColor: gradientStroke2,
+						pointBackgroundColor: gradientStroke2,
+						pointRadius: 0,
+						backgroundColor: gradientFill2,
+						legendColor: '#f3545d',
+						fill: true,
+						borderWidth: 1,
+						data: [154, 184, 175, 203, 210, 231, 240, 278, 252, 312, 320, 374]
+					}, {
+						label: "Trabajo de oficina",
+						borderColor: gradientStroke3,
+						pointBackgroundColor: gradientStroke3,
+						pointRadius: 0,
+						backgroundColor: gradientFill3,
+						legendColor: '#fdaf4b',
+						fill: true,
+						borderWidth: 1,
+						data: [256, 230, 245, 287, 240, 250, 230, 295, 331, 431, 456, 521]
+					}, {
+						label: "Visitantes",
+						borderColor: gradientStroke,
+						pointBackgroundColor: gradientStroke,
+						pointRadius: 0,
+						backgroundColor: gradientFill,
+						legendColor: '#177dff',
+						fill: true,
+						borderWidth: 1,
+						data: [542, 480, 430, 550, 530, 453, 380, 434, 568, 610, 700, 900]
+					}]
+				},
+				options : {
+					responsive: true, 
+					maintainAspectRatio: false,
+					legend: {
+						display: false
+					},
+					tooltips: {
+						bodySpacing: 4,
+						mode:"nearest",
+						intersect: 0,
+						position:"nearest",
+						xPadding:10,
+						yPadding:10,
+						caretPadding:10
+					},
+					layout:{
+						padding:{left:15,right:15,top:15,bottom:15}
+					},
+					scales: {
+						yAxes: [{
+							ticks: {
+								fontColor: "rgba(0,0,0,0.5)",
+								fontStyle: "500",
+								beginAtZero: false,
+								maxTicksLimit: 5,
+								padding: 20
+							},
+							gridLines: {
+								drawTicks: false,
+								display: false
+							}
+						}],
+						xAxes: [{
+							gridLines: {
+								zeroLineColor: "transparent"
+							},
+							ticks: {
+								padding: 20,
+								fontColor: "rgba(0,0,0,0.5)",
+								fontStyle: "500"
+							}
+						}]
+					}, 
+					legendCallback: function(chart) { 
+						var text = []; 
+						text.push('<ul class="' + chart.id + '-legend html-legend">'); 
+						for (var i = 0; i < chart.data.datasets.length; i++) { 
+							text.push('<li><span style="background-color:' + chart.data.datasets[i].legendColor + '"></span>'); 
+							if (chart.data.datasets[i].label) { 
+								text.push(chart.data.datasets[i].label); 
+							} 
+							text.push('</li>'); 
+						} 
+						text.push('</ul>'); 
+						return text.join(''); 
+					}  
+				}
+			});
+
+			var myLegendContainer = document.getElementById("myChartLegend");
+
+			// generate HTML legend
+			myLegendContainer.innerHTML = myHtmlLegendsChart.generateLegend();
+
+			// bind onClick event to all LI-tags of the legend
+			var legendItems = myLegendContainer.getElementsByTagName('li');
+			for (var i = 0; i < legendItems.length; i += 1) {
+				legendItems[i].addEventListener("click", legendClickCallback, false);
+			}
+
+		</script>
+	</body>
+
+	</html>
