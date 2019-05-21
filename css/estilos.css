@@ -120,8 +120,11 @@ body {
 	font-size: 1.4rem;
 }
 .register-checkbox {
-	width: 8%;
-	height: 50px;
+	/*width: 8%;
+	height: 50px;*/
+	height: 30px;
+	margin-top: 0;
+	width: 5%;
 	position: static;
 }
 .register-form {
@@ -320,6 +323,9 @@ body {
 	}
 	.personalizate-list-items {
 		margin-left: .5rem;
+	}
+	.register-checkbox {
+		width: 10%;
 	}
 	.register-form {
 		margin-top: 10%;
